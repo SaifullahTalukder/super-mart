@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Mart</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Open+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!------- header part ------->
+    <header id="top_header" class="header_sticky">
+      <div class="container">
+        <div class="row header_padding justify-content-center">
+          <div class="col-sm-5 col-lg-6 col-7">
+              <div class="header_left d-flex align-items-center">
+                <div class="logo">
+                  <button class="mobile_menu_button d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile_menu" aria-controls="offcanvasExample">
+                    <i class="fas fa-bars"></i>
+                  </button>
+                  
+                  <a href="#"><img src="images/logo (1).png" alt="" /></a>
+                </div>
+                <div class="search_box d-none d-lg-block">
+                  <form action="">
+                    <div class="input-group">
+                      <select name="" id="">
+                        <option value="">Category</option>
+                        <option value="">Groceries</option>
+                        <option value="">Computer</option>
+                        <option value="">Women</option>
+                        <option value="">Electronics</option>
+                        <option value="">Men</option>
+                        <option value="">Baby</option>
+                        <option value="">Sports</option>
+                      </select>
+                      <input type="text"class="form-control form_border" placeholder="What are you looking for..." aria-label="Text input with 2 dropdown buttons"/>
+                      <button class="btn btn-outline-secondary">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-7 col-lg-6 col-5">
+              <div class="header_right d-flex align-items-center justify-content-end">
+                <p class="d-none d-xl-block" ><i class="fas fa-location-dot"></i> Dhaka,Bangladesh</p>
+                <form action="">
+                  <select name="" id="">
+                    <option value="">English-USD</option>
+                    <option value="">English-USD</option>
+                    <option value="">English-USD</option>
+                    <option value="">English-USD</option>
+                    <option value="">English-USD</option>
+                    <option value="">English-USD</option>
+                  </select>
+                </form>
+                <button type="button" class="button_signup" data-bs-toggle="modal" data-bs-target="#sign_up"><i class="fas fa-user"></i> <span>Sign Up</span></button>
+                <div class="cart_button">
+                  <button  type="button" data-bs-toggle="offcanvas" class="cart_btn" data-bs-target="#headerOffcanvasRight">
+                    <i class="fas fa-cart-arrow-down"></i> <span>Cart</span>
+                  </button>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="row d-lg-none">
+          <div class="col-12 md_form d-flex justify-content-center">
+            <input type="text"class="form-control form_border" placeholder="What are you looking for..." aria-label="Text input with 2 dropdown buttons"/>
+            <button class="btn btn-outline-secondary">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!------- dextop menu ------->
+    <nav class="navbar d-none d-lg-block" id="dextop_menu">
+      <div class="container">
+        <div class="main_menu">
+          <ul>
+            <li class="dropdown_menu home"><a href="index.html">Home <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="index.html">Home-01</a></li>
+                <li><a href="">Home-02</a></li>
+                <li><a href="">Home-03</a></li>
+                <li><a href="">Home-04</a></li>
+              </ul>
+            </li>
+            <!-- mega menu -->
+            <li class="mega_menu"><a href="#">Collection <i class="fas fa-angle-down"></i></a>
+              <div class="megamenu_container">
+                <div class="mega_menu_items">
+                  <h3>header</h3>
+                  <ul>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                  </ul>
+                </div>
+                <div class="mega_menu_items">
+                  <h3>header</h3>
+                  <ul>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                  </ul>
+                </div>
+                <div class="mega_menu_items">
+                  <h3>header</h3>
+                  <ul>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                  </ul>
+                </div>
+                <div class="mega_menu_items">
+                  <h3>header</h3>
+                  <ul>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                  </ul>
+                </div>
+                <div class="mega_menu_items">
+                  <h3>header</h3>
+                  <ul>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                    <li><a href="">sub-menu</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <!-- mega menu end -->
+            <li class="dropdown_menu"><a href="#">Pages <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="termsOfService.html">Terms of Service</a></li>
+                <li><a href="commingSoon.html">Comming Soon</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Hot Offers <i class="fas fa-angle-down"></i></a></li>
+            <li class="dropdown_menu"><a href="#">Shop <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="#">Shop-01</a></li>
+                <li><a href="#">Shop-02</a></li>
+                <li><a href="#">Shop-03</a></li>
+                <li><a href="#">Shop-04</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Blog <i class="fas fa-angle-down"></i></a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu_contact">
+          <a href="#"><i class="fas fa-phone"></i> +012345678</a>
+        </div>
+      </div>
+    </nav>
+    <!------- dextop menu end ------->
+    </header>
+    <!------- header part end ------->
+    <!------- cart part ------->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="headerOffcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header cart_header">
+        <h2>Your Cart</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body cart_body">
+        <div class="cart_title">
+          <h3>Product</h3>
+          <h3>Price</h3>
+        </div>
+        <div class="cart_items">
+          <div class="shoping_cart">
+            <a href="#" class="cart_product_img"><img src="images/cart-01.png" alt=""></a>
+            <div class="shoping_content">
+              <div class="shoping_content_top">
+                <h5 class="product_content">All Natural Italian Chicken Meatballs</h5>
+                <h5>$24.40</h5>
+              </div>
+              <div class="shoping_content_bottom">
+                <div class="quantity_content">
+                  <div class="quantity">
+                    <i class="fas fa-minus"></i>
+                    <i class="fa-regular fa-0"></i>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <span>In Stock</span>
+                </div>
+                <div class="action_btn">
+                  <i class="fas fa-trash"></i>
+                  <span>Delete</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shoping_cart">
+            <a href="#" class="cart_product_img"><img src="images/cart-01.png" alt=""></a>
+            <div class="shoping_content">
+              <div class="shoping_content_top">
+                <h5 class="product_content">All Natural Italian Chicken Meatballs</h5>
+                <h5>$24.40</h5>
+              </div>
+              <div class="shoping_content_bottom">
+                <div class="quantity_content">
+                  <div class="quantity">
+                    <i class="fas fa-minus"></i>
+                    <i class="fa-regular fa-0"></i>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <span>In Stock</span>
+                </div>
+                <div class="action_btn">
+                  <i class="fas fa-trash"></i>
+                  <span>Delete</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shoping_cart">
+            <a href="#" class="cart_product_img"><img src="images/cart-01.png" alt=""></a>
+            <div class="shoping_content">
+              <div class="shoping_content_top">
+                <h5 class="product_content">All Natural Italian Chicken Meatballs</h5>
+                <h5>$24.40</h5>
+              </div>
+              <div class="shoping_content_bottom">
+                <div class="quantity_content">
+                  <div class="quantity">
+                    <i class="fas fa-minus"></i>
+                    <i class="fa-regular fa-0"></i>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <span>In Stock</span>
+                </div>
+                <div class="action_btn">
+                  <i class="fas fa-trash"></i>
+                  <span>Delete</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shoping_cart">
+            <a href="#" class="cart_product_img"><img src="images/cart-01.png" alt=""></a>
+            <div class="shoping_content">
+              <div class="shoping_content_top">
+                <h5 class="product_content">All Natural Italian Chicken Meatballs</h5>
+                <h5>$24.40</h5>
+              </div>
+              <div class="shoping_content_bottom">
+                <div class="quantity_content">
+                  <div class="quantity">
+                    <i class="fas fa-minus"></i>
+                    <i class="fa-regular fa-0"></i>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <span>In Stock</span>
+                </div>
+                <div class="action_btn">
+                  <i class="fas fa-trash"></i>
+                  <span>Delete</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shoping_cart">
+            <a href="#" class="cart_product_img"><img src="images/cart-01.png" alt=""></a>
+            <div class="shoping_content">
+              <div class="shoping_content_top">
+                <h5 class="product_content">All Natural Italian Chicken Meatballs</h5>
+                <h5>$24.40</h5>
+              </div>
+              <div class="shoping_content_bottom">
+                <div class="quantity_content">
+                  <div class="quantity">
+                    <i class="fas fa-minus"></i>
+                    <i class="fa-regular fa-0"></i>
+                    <i class="fa fa-plus"></i>
+                  </div>
+                  <span>In Stock</span>
+                </div>
+                <div class="action_btn">
+                  <i class="fas fa-trash"></i>
+                  <span>Delete</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sub_total">
+          <div class="subtotal_balance">
+            <span>Subtotal</span>
+            <span>$45.00</span>
+          </div>
+          <div class="subtotal_balance">
+            <span>Sipping:</span>
+            <span>$15.22</span>
+          </div>
+        </div>
+        <div class="total_balance d-flex justify-content-between">
+          <h3>Total <span>(Incl. VAT)</span></h3>
+          <h3>$60.22</h3>
+        </div>
+        <div class="cart__btn">
+          <a href="#" class="cart_btn_left">Go To Checkout</a>
+          <a href="#" class="cart_btn_right">Go To Checkout</a>
+        </div>
+      </div>
+    </div>
+    <!------- cart part end ------->
+    <!------- mobile menu ------->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile_menu" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <img src="images/logo (1).png" alt="">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="search_box_mobile d-flex justify-content-center">
+          <input type="text"class="form-control" placeholder="What are you looking for..." aria-label="Text input with 2 dropdown buttons"/>
+          <button class="btn btn-outline-secondary">
+          <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <div class="mobileMenu">
+          <ul>
+            <li class="mactive"><a href="#">Home <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="#">Home-01</a></li>
+                <li><a href="#">Home-02</a></li>
+                <li><a href="#">Home-03</a></li>
+                <li><a href="#">Home-04</a></li>
+              </ul>
+            </li>
+            <li><a href="#">About <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="#">Home-01</a></li>
+                <li><a href="#">Home-02</a></li>
+                <li><a href="#">Home-03</a></li>
+                <li><a href="#">Home-04</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Blog <i class="fas fa-angle-down"></i></a></li>
+            <li><a href="#">Shop <i class="fas fa-angle-down"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!------- mobile menu end ------->
+    <!-- ---------about page main-------- -->
+    <section id="about_page_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="section_header">
+                        <h2>We Sell The Best Product For All Our Customers.</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about_section_text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quam pulvinar ut ligula sapien, tincidi dictumst morbi. A vitae amet pretium maecenas sed proin. Lorem ipsum dolor sit amet, convetur adipiscing elit. Egestas sagittis erat dui convallis venenatis a. Lorem ipsum dolor sit amt, constur adipiscing. Aliquam egestas sagittis era.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------about page main end-------- -->
+    <!-- -----------about partner section------------ -->
+    <section id="partner_section">
+        <div class="container">
+            <div class="partnarSwiper swiper">
+                <div class="swiper-wrapper">
+                    <div class="partner_item swiper-slide">
+                        <img src="images/brand-netflix.png" alt="">
+                    </div>
+                    <div class="partner_item swiper-slide">
+                        <img src="images/brand-slack.png" alt="">
+                    </div>
+                    <div class="partner_item swiper-slide">
+                        <img src="images/brand-spotify.png" alt="">
+                    </div>
+                    <div class="partner_item swiper-slide">
+                        <img src="images/brand-vimeo.png" alt="">
+                    </div>
+                    <div class="partner_item swiper-slide">
+                        <img src="images/brand-airbnb.png" alt="">
+                    </div>
+                    <div class="partner_item swiper-slide">
+                        <img src="images/brand-heroku.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------about partner section end------------ -->
+    <!-- ----------apout provide section ------------ -->
+    <section id="provide_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md6">
+                    <div class="section_heading">
+                        <h2>What We Provide?</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Platea auctor ultricies gravida integer eget ligula felis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <div class="provide_img_wrapper">
+                        <img src="images/what-we-provide.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="provide_box_wrapper">
+                                <div class="provide_box">
+                                    <div class="box_text">01</div>
+                                    <div class="box_content">
+                                        <h4>Best Prices & Offers</h4>
+                                        <p>Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="provide_box_wrapper">
+                                <div class="provide_box">
+                                    <div class="box_text">01</div>
+                                    <div class="box_content">
+                                        <h4>Best Prices & Offers</h4>
+                                        <p>Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="provide_box_wrapper">
+                                <div class="provide_box">
+                                    <div class="box_text">01</div>
+                                    <div class="box_content">
+                                        <h4>Best Prices & Offers</h4>
+                                        <p>Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------apout provide section end--------- -->
+    <!-- ---------- our team section ------------- -->
+    <!-- <section id="our_team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="section_heading">
+                        <h2>Meet Our Team</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis lacus arcu, viverra luctus posuere imperdiet curabitur euismod amet.</p>
+                    </div>
+                    <div class="team_arrow_next"><i class="fas fa-long-arrow-alt-right"></i></div>
+                    <div class="team_arrow_prev"><i class="fas fa-long-arrow-alt-left"></i></div>
+                </div>
+                <div class="col-lg-8">
+                    <div class=" swiper teamSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="our_team_member_wrapper">
+                                    <div class="team_member_img">
+                                        <img src="images/team-2.png" alt="">
+                                    </div>
+                                    <div class="team_member_content text-center">
+                                        <h3>Ralph Edwards</h3>
+                                        <p>Project Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="our_team_member_wrapper">
+                                    <div class="team_member_img">
+                                        <img src="images/team-2.png" alt="">
+                                    </div>
+                                    <div class="team_member_content text-center">
+                                        <h3>Ralph Edwards</h3>
+                                        <p>Project Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="our_team_member_wrapper">
+                                    <div class="team_member_img">
+                                        <img src="images/team-2.png" alt="">
+                                    </div>
+                                    <div class="team_member_content text-center">
+                                        <h3>Ralph Edwards</h3>
+                                        <p>Project Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="our_team_member_wrapper">
+                                    <div class="team_member_img">
+                                        <img src="images/team-2.png" alt="">
+                                    </div>
+                                    <div class="team_member_content text-center">
+                                        <h3>Ralph Edwards</h3>
+                                        <p>Project Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- ---------- our team section end ------------- -->
+    <!-- -----------testimonial section---------- -->
+    <section id="testimonial_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section_heading col-lg-6 text-center  m-auto">
+              <h2>Who Love Our Work</h2>
+              <p>nce Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis lacus arcu, viverra luctus posuere imperdiet curabitur euismod amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -----------testimonial section end---------- -->
+
+
+    <!------- action part ------->
+    <section id="action_part">
+      <div class="container">
+        <div class="row">
+          <div class="action_box_wrapper">
+            <h2>Get notified when we're launching new products</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet leo, porta aliquet non mattis. Nulla ante pellentesque blandit fermentum.</p>
+            <form action="#" class="action_form">
+              <input type="text" placeholder="Enter Your Email">
+              <button type="submit">Notify Me</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------- action part end ------->
+    <!-------- footer part -------->
+    <footer id="footer_part">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 ">
+            <div class="footer_logo_wrapper">
+              <div class="footer_logo">
+                <a href="#">
+                  <img src="images/logo (1).png" alt="">
+                </a>
+              </div>
+              <p class="col-sm-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. At praesent eget mauris felis scelerisque enim enim, magna.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3">
+            <div class="footer_content">
+              <div class="content_title">
+                <h5>Product</h5>
+              </div>
+              <ul>
+                <li><a href="#">Shirt</a></li>
+                <li><a href="#">Groceries <span class="hot">Hot</span></a></li>
+                <li><a href="#">Computer <span>New</span></a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Sports</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3">
+            <div class="footer_content">
+              <div class="content_title">
+                <h5>Company</h5>
+              </div>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Media kit</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3">
+            <div class="footer_content">
+              <div class="content_title">
+                <h5>Resources</h5>
+              </div>
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Newsletter <span>Best</span></a></li>
+                <li><a href="#">Help centre</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-3">
+            <div class="footer_content">
+              <div class="content_title">
+                <h5>Legal</h5>
+              </div>
+              <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Licenses</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom_part">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="footer_bottom">
+                <div class="copyright_text">
+                  <p><i class="fas fa-copyright"></i> 2022 <span>SuperMart</span>. All rights reserved</p>
+                </div>
+                <div class="footer_link">
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-------- footer part end -------->
+    <!-- scroll top part -->
+    <div class="backtop">
+      scroll
+    </div>
+    <!-- scroll top part end -->
+    <!-- sign up button -->
+    <div class="signUp_button">
+      <div class="container">
+        <div class="modal fade modal_button" id="sign_up">
+          <div class="container">
+            <div class="modal-dialog modal_radius">
+              <div class="modal-content modal_content">
+                <div class="row">
+                  <div class="col-6 d-none d-md-block">
+                    <div class="modal_img">
+                      <img src="images/logo (1).png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12">
+                    <div class="modam_form">
+                      <button type="button" class="btn-close close_btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <h2>Create Account</h2>
+                      <div class="modam__socials">
+                        <div class="modal_social">
+                          <a href="#"><i class="fa-brands fa-google"></i> Sign up with Google</a>
+                        </div>
+                        <div class="modal_social">
+                          <a href="#"><i class="fa-brands fa-google"></i> Sign up with Google</a>
+                        </div>
+                      </div>
+                      <div class="or">- OR -</div>
+                      <form action="#">
+                        <p>Your Name</p>
+                        <input type="text" class="form-control" placeholder="Enter Your Full Name">
+                        <p>Your Name</p>
+                        <input type="text" class="form-control" placeholder="Enter Your Full Name">
+                        <p>Your Name</p>
+                        <input type="text" class="form-control" placeholder="Enter Your Full Name">
+                        <button type="submit" class="submit_button form-control">Creative Account</button>
+                      </form>
+                      <div class="modal_bottom"><p>Already have an account? <a href="#">Login</a></p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sign up button end -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,285 @@
+@media (min-width:1400px) {
+    .hero_slider_bar {
+        padding: 0px 85px;
+    }
+    .hero_slider_bar::after {
+        right: 73px;
+    }
+    .arrow_prev {
+        bottom: 4px;
+        left: 41%;
+    }
+    .arrow_next {
+        bottom: -20px;
+        left: 35%;
+    }
+}
+@media (min-width:1200px) and (max-width:1399.98px){
+
+}
+@media (min-width:992px) and (max-width:1199.98px){
+    .hero_banner img {
+        width: 100%;
+    }
+    .hero_slider_bar {
+        padding: 0px 35px;
+    }
+    .hero_slider_bar::after {
+        height: 230px;
+        width: 230px;
+        bottom: 50px;
+        right: 13px;
+    }
+    .arrow_prev {
+        bottom: 15px;
+        left: 42%;
+    }
+    .arrow_next {
+        bottom: -10px;
+        left: 35%;
+    }
+    .modam_form a {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+    .modam_form {
+        padding: 40px 40px 70px 35px;
+    }
+    .signUp_button .modal_button {
+        --bs-modal-width: 90%;
+    }
+    .section_header h2{
+        font-size: 30px;
+    }
+    .about_section_text P{
+        font-size: 12px;
+    }
+}
+@media (min-width:768px) and (max-width:991.98px){
+    .modam_form h2 {
+        margin: 30px 0 20px 0;
+        font-size: 30px;
+    }
+    .modam_form {
+        padding: 35px 35px 60px 18px;
+    }
+    .modam__socials {
+        display: block;
+    }
+    .modam_form a {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .modam_form h2 {
+        margin: 30px 0 20px 0;
+    }
+    .section_header h2{
+        width: 100%;
+        max-width: 475px;
+    }
+    .team_member_img img {
+        height: 290px;
+    }
+}
+@media (max-width:991.98px){
+    .md_form{
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        border-radius: 16px;
+    }
+    .hero_slider_bar::after {
+        display: none;
+    }
+    .hero_banner img {
+        max-width: 400px;
+        display: block;
+        margin: auto;
+    }
+    .hero_content{
+        text-align: center;
+    }
+    .hero_btn a {
+        margin: auto;
+    }
+    .feature_slider {
+        margin-top: 30px;
+    }
+    .collection_img_wrapper .collection_img {
+        margin-bottom: 23px;
+    }
+    #collection_part {
+        padding: 10px 0;
+    }
+    .footer_logo {
+        margin-bottom: 20px;
+    }
+    .footer_logo_wrapper{
+        margin-bottom: 20px;
+    }
+    .feature_items {
+        margin-bottom: 10px;
+    }
+    .action_box_wrapper {
+        padding: 20px;
+    }
+    #footer_part {
+        padding-top: 20px;
+    }
+    .form_border {
+        border: none !important;
+    }
+}
+@media (max-width:767.98px){
+    .hero_content h1 {
+        font-size: 52px;
+        line-height: 66px;
+    }
+    #banner_ads {
+        padding: 10px 0 0px 0;
+    }
+    #category {
+        padding: 0;
+    }
+    #arrivals {
+        padding: 30px 0;
+    }
+    #on_sales {
+        padding: 10px 0 20px 0;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    #feature_section {
+        padding: 20px 0;
+    }
+    .provide_img_wrapper {
+        margin-bottom: 20px;
+    }
+}
+@media (min-width:576px) and (max-width:767.98px){
+    .header_right .cart_btn {
+        height: 34px;
+        width: 75px;
+    }
+    .header_right .button_signup {
+        margin: 0 9px;
+    }
+    .header_flex{
+        display: flex;
+    }
+    .banner_ads_three{
+        margin-top: 20px;
+    }
+    .arrivals_menu .nav-item .nav-link {
+        font-size: 14px;
+        padding: 8px;
+    }
+    #countdown ul li {
+        height: 53px;
+        width: 53px;
+    }
+    .action_box_wrapper p {
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 386px;
+    }
+    .section_header h2 {
+        width: 100%;
+        max-width: 370px;
+    }
+}
+@media (max-width:575.98px){
+    .header_right{
+        float: right;
+    }
+    #top_header select {
+        display: none;
+    }
+    .header_right span{
+        display: none;
+    }
+    .logo img{
+        width: 70%;
+        height: 70%;
+    }
+    .hero_banner img {
+        max-width: 218px;
+    }
+    .header_right .cart_btn i{
+        color: #667085;
+    }
+    .header_right .cart_btn {
+        height: 0px;
+        width: 100%;
+        background: transparent;
+    }
+    .arrow_prev {
+        left: 49%;
+    }
+    #hero {
+        padding: 33px 0 55px 0;
+    }
+    .modam__socials {
+        display: block;
+    }
+    .modam_form a {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 10px;
+    } 
+    .modam_form h2 {
+        margin: 30px 0 20px 0;
+    }
+    .banner_ads_items {
+        margin-bottom: 10px;
+    }
+    .arrivals_menu {
+        display: block;
+    }
+    .arrivals_menu .nav-item .nav-link {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .on_sales_heading_left {
+        display: block !important;
+    }
+    #countdown ul li {
+        height: 46px;
+        width: 46px;
+        padding: 0px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    #on_sales .section_heading {
+        padding-bottom: 4px;
+    }
+    #on_sales a{
+        font-size: 14px;
+    }
+    .action_box_wrapper .action_form {
+        display: block;
+    }
+    .action_box_wrapper .action_form  button {
+        margin-top: 10px;
+    }
+    .footer_content ul{
+        display: none;
+    }
+    .content_title h5 {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+    }
+    .section_header h2 {
+        width: 100%;
+        max-width: 350px;
+        font-size: 33px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .about_section_text p{
+        text-align: center;
+    }
+    
+}
